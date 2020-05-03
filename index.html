@@ -1,39 +1,44 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
    <meta charset="UTF-8">
    <title>Document</title>
    <link rel="stylesheet" href="css/style.css">
    <link rel="stylesheet" href="css/normalize.css.css">
+   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
+
 <body>
    <div class="site-wrapper">
-      <header class="main-header">
-         <div class="main-logo">
-            <a href="">
-               <img src="img/main-logo.png" width="163px" height="35px" alt="Device">
-            </a>
-         </div>
-         <div class="content-wrapper">
-            <div class="main-menu">
+      <div class="content-wrapper">
+         <header class="main-header">
+            <nav class="main-navigation">
+               <div class="main-logo">
+                  <a>
+                     <img src="img/main-logo.png" width="163px" height="35px" alt="Device">
+                  </a>
+               </div>
+
+               <div class="menu-block">
                   <form class="search-form" action="" method="post">
-                     <input type="text">
+                     <input type="text" placeholder="Поиск по сайту" id="search">
+                     <label for="search"></label>
                      <button class="search-btn" type="submit">Найти</button>
                   </form>
-               <div class="user-block">
-                  <a class="login" href="">Войти</a>
+                  <div class="user-block">
+                     <a class="login" href="">Войти</a>
+                  </div>
+                  <div class="user-cart">
+                     <a class="compare" href="">Сравнить</a>
+                     <a class="cart" href="">Корзина</a>
+                  </div>
                </div>
-               <div class="user-cart">
-                  <a  class="compare" href="">Сравнить</a>
-                  <a class="cart" href="">Корзина</a>
-               </div>
-            </div>
-            <div class="catalog-menu">
-            <nav class="main-navigation">
-               <div class="catalog-menu">
-                  <a href="">Каталог товаров</a>
-               </div>
-               <div class="other-navigation">
+
+               <div class="navigation-block">
+                  <div class="catalog-menu">
+                     <a href="">Каталог товаров</a>
+                  </div>
                   <div class="delivery">
                      <a href="">Доставка</a>
                   </div>
@@ -45,8 +50,149 @@
                   </div>
                </div>
             </nav>
+            <div class="slider">
+               <div class="slide">
+                  <div></div>
+                  <div class="slide-content-left">
+                     <img src="" alt="">
+                  </div>
+                  <div class="slide-content-right">
+                     <img class="slide-number" src="" alt="">
+                     <h2 class="slide-heading"></h2>
+                     <p class="text"></p>
+                     <a href="">Подробнее</a>
+                     <ul class="">
+                        <li>
+                           <h3>8,5 м</h3>
+                           <span></span>
+                        </li>
+                        <li>
+                           <h3>5 кг</h3>
+                           <span></span>
+                        </li>
+                        <li>
+                           <h3>Карбон</h3>
+                           <span></span>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </header>
+
+         <section class="popular-block">
+            <article>
+               <a href="index.html">
+                  <img src="img/popular-1.png" width="97px" height="55px" alt="Виртуальная реальность">
+               </a>
+               <p>Виртуальная реальность</p>
+            </article>
+            <article>
+               <a href="index.html">
+                  <img src="img/popular-2.png" width="86px" height="117px" alt="Моноподы для селфи">
+               </a>
+               <p>Моноподы для селфи</p>
+            </article>
+            <article>
+               <a href="index.html">
+                  <img src="img/popular-3.png" width="71px" height="87px" alt="Экшн-камеры">
+               </a>
+               <p>Экшн-камеры</p>
+            </article>
+            <article>
+               <a href="index.html">
+                  <img src="img/popular-4.png" width=107px" height="65px" alt="Фитнес-браслеты">
+               </a>
+               <p>Фитнес-браслеты</p>
+            </article>
+            <article>
+               <a href="index.html">
+                  <img src="img/popular-5.png" width="56px" height="98px" alt="Умные часы">
+               </a>
+               <p>Умные часы</p>
+            </article>
+            <article>
+               <a href="index.html">
+                  <img src="img/popular-6.png" width="135px" height="69px" alt="Квадрокоптеры">
+               </a>
+               <p>Квадрокоптеры</p>
+            </article>
+         </section>
+      </div>
+
+      <section class="services-block">
+         <div class="delivery"></div>
+      </section>
+
+      <div class="content-wrapper">
+         <section class="logotypes-block">
+            <ul>
+               <li>
+                  <a href=""><img src="img/logo-1.png" width="260px" height="100px" alt="DJI"></a>
+               </li>
+               <li>
+                  <a href=""><img src="img/logo-2.png" width="260px" height="100px" alt="SP Gadgets"></a>
+               </li>
+               <li>
+                  <a href=""><img src="img/logo-3.png" width="260px" height="100px" alt="GoPro"></a>
+               </li>
+               <li>
+                  <a href=""><img src="img/logo-4.png" width="260px" height="100px" alt="Vive"></a>
+               </li>
+            </ul>
+         </section>
+
+         <section class="info-block">
+            <div class="about-us">
+               <h2>О нас</h2>
+               <p></p>
+               <p></p>
+               <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+               </ul>
+               <a href="">Подробнее о нас</a>
+            </div>
+            <div class="contacts">
+               <h2>Контакты</h2>
+               <p></p>
+               <img src="" alt="Карта">
+               <a href="">Напишите нам</a>
+            </div>
+         </section>
+      </div>
+
+      <footer class="main-footer">
+         <div class="footer-content-left">
+            <a class="footer-logo" href=""><img src="" alt=""></a>
+            <p></p>
          </div>
-      </header>
+
+         <div class="footer-content-center">
+            <ul class="footer-navigation">
+               <li><a href="">Доставка</a></li>
+               <li><a href="">Гарантия</a></li>
+               <li><a href="">Контакты</a></li>
+            </ul>
+            <ul class="footer-socials">
+               <li><a href=""><img src="" alt=""></a></li>
+               <li><a href=""><img src="" alt=""></a></li>
+               <li><a href=""><img src="" alt=""></a></li>
+            </ul>
+         </div>
+
+         <div class="footer-content-right">
+            <ul class="footer-user-block">
+               <li><a href=""></a></li>
+               <li><a href=""></a></li>
+               <li><a href=""></a></li>
+            </ul>
+            <p></p>
+            <a class="mini-logo" href=""><img src="" alt=""></a>
+         </div>
+      </footer>
    </div>
 </body>
+
 </html>

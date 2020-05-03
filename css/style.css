@@ -1,20 +1,47 @@
+   /* ------------------------- HTML, BODY, WRAPPERS -------------------------*/
+@font-face {
+   font-family: 'Gilroy', sans-serif;
+   src: url('gilroyextrabold.woff');
+   font-weight: extrabold;
+}
+
 html, body {
    margin: 0;
    padding: 0;
-   min-width: 1200px;
  
 }
 
 body {
-   background: #fff;
-   
-   font-family: 'Gilroy', 'Arial', sans-serif;
+   color: #000;
+   font-family: 'Open Sans', 'Arial',sans-serif;
    text-transform: none;
+
+   background: #fff;
+}
+
+h2 {
+   font-family: 'Gilroy', 'Arial',sans-serif;
+   font-weight: extrabold;
+   font-size: 47px;
+   line-height: 48px;
+   color: #000;
+}
+
+p {
+   font-family: inherit;
+   font-weight: light;
+   font-size: 15px;
+   line-height: 30px;
+   color: #000;
 }
 
 
 .site-wrapper {
-   
+   width: 1400px;
+   margin: 0 auto;
+}
+
+.content-wrapper {
    width: 1160px;
    margin: 0 auto;
    padding-top: 40px;
@@ -22,75 +49,321 @@ body {
    padding-right: 20px;
 
    /* background: gray; */
-   
-   min-height: 500px;
 }
 
-.main-header {
-   position: relative;
+/* ------------------------- HEADER -------------------------*/
 
+/* .main-header {
    background: #f7e296;
+
+   min-height: 300px;
+} */
+
+.main-navigation {
+   padding: 0 60px;
+   padding-bottom: 163px;
+
+   background: #f7e296
 }
 
 .main-logo {
+   position: relative;
+
+   background: red;
+}
+
+.main-logo img {
    position: absolute;
    top: -18px;
-   left: 60px;
-   
-}
-
-.content-wrapper {
-   padding: 0 60px;
-   /* min-height: 300px; */
-;
+   left: 0px;
 
    
+   background: red;
 }
 
-.main-menu {
+.menu-block {
    display: flex;
-   align-items: flex-start;
    justify-content: space-between;
-   margin-bottom: 45px;
    padding-top: 45px;
+   margin-bottom: 38px;
+}
 
+.menu-block a {
+   font-family: inherit;
+   font-weight: light;
+   font-size: 15px;
+   line-height: 30px;
+   color: #000;
+   text-transform: inherit;
+   text-decoration: none;
+
+   background: red;
+}
+
+.menu-block a:hover,
+.menu-block a:focus {
+   color: rgba(0, 0, 0, 0.6);
+}
+
+.menu-block a:active {
+   color: rgba(0, 0, 0, 0.3);
 }
 
 .search-form {
-   width: 440px;
-   margin-right: 100px;
+   position: relative;
+
+   display: flex;
+   width: 400px;
+   height: 48px;
+   margin: 0;
+   margin-right: 140px;
+   padding: 0;
+
+   background: rebeccapurple;
 }
+
+.search-form label { 
+   margin: 0;
+   padding: 0;
+   /* padding-left: 29px; */
+
+   font-size: 0;
+   border: none;
+   
+
+   background: #e5e5e5;
+}
+
+
+.search-form label::before {
+   position: absolute;
+   top: 7px;
+   left: 2px;
+
+   
+   content: "";
+   width: 16px;
+   height: 16px;
+
+
+   background: url("../img/search.png");
+}
+
+
+.search-form input {
+   margin: 0;
+   padding: 0;
+   padding-left: 39px;
+
+
+   font-size: 15px;
+   line-height: 30px;
+   letter-spacing: 0.1px;
+   font-family: inherit;
+
+   color: #000;
+   background: transparent;
+   border: none;
+}
+
+.search-form input::placeholder {
+   font-family: inherit;
+   font-size: 15px;
+   line-height: 30px;
+   letter-spacing: 0.1px;
+   color: rgba(0, 0, 0, 0.3);
+}
+
+.search-form input:hover::placeholder {
+   color: rgba(0, 0, 0, 1);
+}
+
+.search-form input:focus {
+   outline: none;
+   border-bottom: 2px solid black;
+}
+
+.search-form input:focus ~ .search-btn {
+   display: inline-block;
+}
+
+
+.search-form .search-btn {
+   display: none;
+   margin: 0;
+   padding: 0 10px;
+
+   font-family: inherit;
+   font-size: 15px;
+   line-height: 30px;
+   
+   color: #000;
+   
+   background: transparent;
+
+   border: 2px solid black;
+
+}
+
+
 
 .user-block {
    width: 100px;
    margin-right: 180px;
 }
 
-.user-cart {
+
+ .user-cart {
    display: flex;
    align-items: flex-start;
    justify-content: space-between;
    width: 220px;
 }
 
-.main-navigation {
+
+
+
+.navigation-block {
    display: flex;
+   
 }
 
-.catalog-menu {
+.navigation-block .catalog-menu {
    width: 300px;
    margin-right: 240px;
+   background: red;
 }
 
+.navigation-block .delivery {
+   width: 140px;
+   margin-right: 20px;
+   background: honeydew;
+}
 
+.navigation-block .garantee {
+   width: 140px;
+   margin-right: 80px;
+   background: hotpink;
+}
 
-.other-navigation {
+.navigation-block .contacts {
+   background: palegreen;
+}
+
+.navigation-block a {
+   font-family: inherit;
+   font-weight: extrabold;
+   font-size: 18px;
+   line-height: 24px;
+   color: #000;
+   text-transform: uppercase;
+   text-decoration: none;
+}
+
+.navigation-block a:hover,
+.navigation-block a:focus {
+   color: rgba(0, 0, 0, 0.6);
+}
+
+.navigation-block a:active {
+   color: rgba(0, 0, 0, 0.3);
+}
+
+.slider {
+
+}
+
+/* ------------------------- MAIN -------------------------*/
+.popular-block {
    display: flex;
+   justify-content: space-between;
+   width: 160px;
+   margin-bottom: 185px;
+   /* background: red; */
 }
 
+.popular-block article {
+   margin-right: 40px;
 
+   /* background: navy; */
+}
 
+.popular-block article:last-child {
+   margin-right: 0;
+}
 
+.popular-block a {
+   display: flex;
+   justify-content: center;
+   width: 160px;
+   height: 160px;
+   margin-bottom: 33px;
 
+   background: #f7e296;
+}
 
+.popular-block a:hover {
+   background: #f0c52e;
+}
 
+.popular-block a:active img{
+   opacity: 0.3;
+}
+
+.popular-block a:active + p {
+   color: rgba(0, 0, 0, 0.3);
+}
+
+.popular-block img {
+   align-self: center;
+}
+
+.popular-block p {
+   font-size: 18px;
+   line-height: 24px;
+}
+
+.services-block {
+   background: #e5e5e5;
+   height: 288px;
+}
+
+.logotypes-block {
+   background: #fff;
+}
+
+.logotypes-block ul {
+   display: flex;
+   justify-content: space-between;
+
+   margin: 0;
+   padding: 0;
+   padding-top: 94px;
+   padding-bottom: 94px;
+
+   list-style: none;
+}
+
+.logotypes-block li {
+   align-self: center;
+}
+
+.logotypes-block a {
+   filter: grayscale(100%);
+   opacity: 0.2;
+}
+
+.logotypes-block a:hover {
+   filter: grayscale(0%);
+   opacity: 1;
+}
+
+.info-block {
+   height: 655px;
+}
+
+/* ------------------------- FOOTER -------------------------*/
+
+.main-footer {
+   background: #464646;
+}

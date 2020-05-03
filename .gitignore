@@ -1,10 +1,9 @@
 *.pdf
 *.psd
-*.woff
-*.woff2
 _materials/
 node_modules/
 npm-debug.*
 Thumbs.db
+*.code-workspace
 
 
