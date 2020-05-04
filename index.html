@@ -4,8 +4,8 @@
 <head>
    <meta charset="UTF-8">
    <title>Document</title>
-   <link rel="stylesheet" href="css/style.css">
    <link rel="stylesheet" href="css/normalize.css.css">
+   <link rel="stylesheet" href="css/style.css">
    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
 
@@ -13,25 +13,27 @@
    <div class="site-wrapper">
       <div class="content-wrapper">
          <header class="main-header">
-            <nav class="main-navigation">
-               <div class="main-logo">
-                  <a>
-                     <img src="img/main-logo.png" width="163px" height="35px" alt="Device">
-                  </a>
-               </div>
+            <div class="main-logo">
+               <a href="">
+                  <img src="img/main-logo.png" width="163px" height="35px" alt="Device">
+               </a>
+            </div>
 
+            <nav class="main-navigation">
                <div class="menu-block">
                   <form class="search-form" action="" method="post">
                      <input type="text" placeholder="Поиск по сайту" id="search">
                      <label for="search"></label>
                      <button class="search-btn" type="submit">Найти</button>
                   </form>
+
                   <div class="user-block">
-                     <a class="login" href="">Войти</a>
+                     <a href="" class="login">Войти</a>
                   </div>
+
                   <div class="user-cart">
-                     <a class="compare" href="">Сравнить</a>
-                     <a class="cart" href="">Корзина</a>
+                     <a href="" class="compare">Сравнить</a>
+                     <a href="" class="cart">Корзина</a>
                   </div>
                </div>
 
@@ -39,43 +41,91 @@
                   <div class="catalog-menu">
                      <a href="">Каталог товаров</a>
                   </div>
+
                   <div class="delivery">
                      <a href="">Доставка</a>
                   </div>
+
                   <div class="garantee">
                      <a href="">Гарантия</a>
                   </div>
+
                   <div class="contacts">
                      <a href="">Контакты</a>
                   </div>
                </div>
             </nav>
             <div class="slider">
-               <div class="slide">
-                  <div></div>
-                  <div class="slide-content-left">
-                     <img src="" alt="">
+               <input type="radio" name="toggle" id="btn-1">
+                <input type="radio" name="toggle" id="btn-2" checked>
+                <input type="radio" name="toggle" id="btn-3">
+
+                <div class="slider-controls">
+                    <label for="btn-1"></label>
+                    <label for="btn-2"></label>
+                    <label for="btn-3"></label>
+                </div>
+
+               <div class="slides">
+                  <div class="slide">
+                     <div class="slide-content-right">
+                        <!-- <img class="slide-number" width="166px"  height="131px" src="img/number-1.png" alt=""> -->
+                        <h2 class="slide-heading">Делай селфи,<br> как Бен Стиллер! </h2>
+                        <p class="text">Самая длинная палка для селфи доступна в нашем магазине.
+                           Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+                        <a class="btn" href="">Подробнее</a>
+                        <div class="parameters">
+                           <div class="parameter">
+                              <span class="parameter-value">8,5 м</span>
+                              <span class="parameter-name">Длина палки</span>
+                           </div>
+                           <div class="parameter">
+                              <span class="parameter-value">5 кг</span>
+                              <span class="parameter-name">Вес палки</span>
+                           </div>
+                           <div class="parameter">
+                              <span class="parameter-value">Карбон</span>
+                              <span class="parameter-name">Материал</span>
+                           </div>
+                        </div>
+                     </div>
                   </div>
-                  <div class="slide-content-right">
-                     <img class="slide-number" src="" alt="">
-                     <h2 class="slide-heading"></h2>
-                     <p class="text"></p>
-                     <a href="">Подробнее</a>
-                     <ul class="">
-                        <li>
-                           <h3>8,5 м</h3>
-                           <span></span>
-                        </li>
-                        <li>
-                           <h3>5 кг</h3>
-                           <span></span>
-                        </li>
-                        <li>
-                           <h3>Карбон</h3>
-                           <span></span>
-                        </li>
-                     </ul>
+
+                  <div class="slide">
+                     <div class="slide-content-right">
+                        <!-- <img class="slide-number" width="198px"  height="131px" src="img/number-2.png" alt=""> -->
+                        <h2 class="slide-heading">Худеем<br>правильно! </h2>
+                        <p class="text">Мотивирующие фитнес-браслеты помогут найти в себе силы <br>
+                           не пропускать занятия и соблюдать диету.</p>
+                        <a class="btn" href="">Подробнее</a>
+                        <div class="parameters">
+                           <div class="parameter">
+                              <span class="parameter-value">48 часов</span>
+                              <span class="parameter-name">Без подзарядки</span>
+                           </div>
+                        </div>
+                     </div>
                   </div>
+
+                  <div class="slide">
+                     <div class="slide-content-right">
+                        <!-- <img class="slide-number" width="201px"  height="131px" src="img/number-3.png" alt=""> -->
+                        <h2 class="slide-heading">Порхает как бабочка, жалит как пчела!</h2>
+                        <p class="text">Этот обычный, на первый взгляд, квадрокоптер оснащен <br> мощным лазером, замаскированным под стандартную камеру.</p>
+                        <a class="btn" href="">Подробнее</a>
+                        <div class="parameters">
+                           <div class="parameter">
+                              <span class="parameter-value">800 м</span>
+                              <span class="parameter-name">Дальность полета</span>
+                           </div>
+                           <div class="parameter">
+                              <span class="parameter-value">50 м</span>
+                              <span class="parameter-name">Радиус поражения</span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
                </div>
             </div>
          </header>
@@ -124,6 +174,7 @@
          <div class="delivery"></div>
       </section>
 
+
       <div class="content-wrapper">
          <section class="logotypes-block">
             <ul>
@@ -141,7 +192,7 @@
                </li>
             </ul>
          </section>
-
+   
          <section class="info-block">
             <div class="about-us">
                <h2>О нас</h2>
@@ -162,6 +213,7 @@
             </div>
          </section>
       </div>
+
 
       <footer class="main-footer">
          <div class="footer-content-left">
@@ -192,6 +244,7 @@
             <a class="mini-logo" href=""><img src="" alt=""></a>
          </div>
       </footer>
+
    </div>
 </body>
 
