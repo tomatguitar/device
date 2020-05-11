@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <title>Каталог</title>
+   <link rel="stylesheet" href="css/normalize.css.css">
+   <link rel="stylesheet" href="css/style.css">
+   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+   <div class="content-wrapper">
+      <header class="main-header">
+         <div class="main-logo">
+            <a href="">
+               <img src="img/main-logo.png" width="163px" height="35px" alt="Device">
+            </a>
+         </div>
+
+         <nav class="main-navigation inner-page">
+            <div class="menu-block">
+               <form class="search-form" action="" method="post">
+                  <input type="text" placeholder="Поиск по сайту" id="search">
+                  <label for="search"></label>
+                  <button class="search-btn" type="submit">Найти</button>
+               </form>
+
+               <div class="user-block">
+                  <a href="" class="login">Войти</a>
+               </div>
+
+               <div class="user-cart">
+                  <a href="" class="compare">Сравнить</a>
+                  <a href="" class="cart">Корзина</a>
+               </div>
+            </div>
+
+            <div class="navigation-block">
+               <div class="catalog-menu">
+                  <a href="">Каталог товаров</a>
+               </div>
+
+               <div class="delivery">
+                  <a href="">Доставка</a>
+               </div>
+
+               <div class="garantee">
+                  <a href="">Гарантия</a>
+               </div>
+
+               <div class="contacts">
+                  <a href="">Контакты</a>
+               </div>
+            </div>
+         </nav>
+         <div class="big-heading-block">
+            <h2>Моноподы для селфи</h2>
+            <ul class="breadcrumbs">
+               <li><a href="">Главная</a></li>
+               <li><a href="">Каталог товаров</a></li>
+               <li class="current"><a href="">Моноподы для селфи</a></li>
+            </ul>
+         </div>
+      </header>
+   </div>
+
+   <main class="content-wrapper">
+      <section class="filter">
+         <div class="price-filter-heading">
+            <p>Фильтр:</p>
+         </div>
+
+         <form  method="get" action="https://echo.htmlacademy.ru">
+            <div class="range-filter">
+               <p>Стоимость</p>
+               <div class="range-controls">
+                  <div class="scale">
+                     <div style="width: 60%;" class="bar"></div>
+                  </div>
+                  <div class="toggle min-toggle"></div>
+                  <div class="toggle max-toggle"></div>
+               </div>
+               <div class="price-controls">
+                  от <input class="min-price" name="min-price" type="text" value="0">
+                  до <input class="max-price"  name="max-price" type="text" value="5000">
+               </div>
+            </div>
+            <div class="color-item-filter">
+               <p>Цвет</p>
+               <ul>
+                  <li>
+                     <input type="checkbox" name="color-item" id="color-item-1" checked>
+                     <label for="color-item-1">Черный</label>
+                  </li>
+                  <li>
+                     <input type="checkbox" name="color-item" id="color-item-2">
+                     <label for="color-item-2">Белый</label>
+                  </li>
+                  <li>
+                     <input type="checkbox" name="color-item" id="color-item-3">
+                     <label for="color-item-3">Синий</label>
+                  </li>
+                  <li>
+                     <input type="checkbox" name="color-item" id="color-item-4">
+                     <label for="color-item-4">Красный</label>
+                  </li>
+                  <li>
+                     <input type="checkbox" name="color-item" id="color-item-5" disabled checked>
+                     <label class="disabled" for="color-item-5">Розовый</label>
+                  </li>
+               </ul>
+            </div>
+            <div class="feature-item-filter">
+               <p>Bluetooth</p>
+               <ul>
+                  <li>
+                     <input type="radio" name="bluetoth-feature" id="b-yes" checked>
+                     <label for="b-yes">Есть</label>
+                  </li>
+                  <li>
+                     <input type="radio" name="bluetoth-feature" id="b-no">
+                     <label class="disabled" for="b-no">Нет</label>
+                  </li>
+               </ul>
+            </div>
+            <button class="btn" type="submit">Показать</button>
+          </form>
+      </section>
+
+      <section class="catalog-gallery">
+         <div class="catalog-filter">
+            <p>Сортировка:</p>
+            <ul class="sort">
+               <li><a class="active" href="">По цене</a></li>
+               <li><a href="">По типу</a></li>
+               <li><a href="">По популярности</a></li>
+            </ul>
+            <ul class="up-down">
+               <li><a href="">&#9650;</a></li>
+               <li><a class="active" href="">&#9660;</a></li>
+            </ul>
+         </div>
+         <div class="catalog-item-previews">
+            <article class="catalog-item">
+               <div class="pop-up">
+                  <button class="btn" type="button">В корзину</button>
+                  <button class="compare-btn">Добавить к сравнению</button>
+               </div>
+               <img src="img/item-1.jpg" width="360px" height="380px" alt="">
+               <div class="item-description">
+                  <p class="item-name">Любительская селфи-палка</p>
+                  <span class="item-price">500 руб.</span>
+               </div>
+            </article>
+
+            <article class="catalog-item">
+               <div class="pop-up">
+                  <button class="btn" type="button">В корзину</button>
+                  <button class="compare-btn">Добавить к сравнению</button>
+               </div>
+               <img src="img/item-2.jpg" width="360px" height="380px" alt="">
+               <div class="item-description">
+                  <p class="item-name">Профессиональная <br> селфи-палка </p>
+                  <span class="item-price">1 500 руб.</span>
+               </div>
+            </article>
+
+            <article class="catalog-item">
+               <div class="pop-up">
+                  <button class="btn" type="button">В корзину</button>
+                  <button class="compare-btn">Добавить к сравнению</button>
+               </div>
+               <img src="img/item-3.jpg" width="360px" height="380px" alt="">
+               <div class="item-description">
+                  <p class="item-name">Непотопляемая селфи-палка</p>
+                  <span class="item-price">2 500 руб.</span>
+               </div>
+            </article>
+
+            <article class="catalog-item">
+               <div class="pop-up">
+                  <button class="btn" type="button">В корзину</button>
+                  <button class="compare-btn">Добавить к сравнению</button>
+               </div>
+               <span class="item-new">NEW</span>
+               <img src="img/item-4.jpg" width="360px" height="380px" alt="">
+               <div class="item-description">
+                  <p class="item-name">Cелфи-палка &laquo;Следуй за мной&raquo;</p>
+                  <span class="item-price">4 900 руб.</span>
+               </div>
+            </article>
+         </div>
+
+         <ul class="pagination">
+            <li><a class="pagination-prev" href="">Назад</a></li>
+            <li>
+               <ul class="pagination-list">
+                  <li><a class="pagination-item active" href="">1</a></li>
+                  <li><a class="pagination-item" href="">2</a></li>
+                  <li><a class="pagination-item" href="">3</a></li>
+               </ul>
+            </li>
+            <li><a class="pagination-next" href="">Вперед</a></li>
+         </ul>
+      </section>
+   </main>
+
+   <footer class="main-footer">
+      <div class="content-wrapper">
+         <div class="footer-content">
+            <div class="footer-content-left">
+               <a class="footer-logo" href=""><img src="img/footer-logo.png" width="163px" height="35px" alt=""></a>
+               <p>г. Москва, ул. Строителей, 15</p>
+            </div>
+
+            <div class="footer-content-center">
+               <ul class="footer-navigation">
+                  <li><a href="">Доставка</a></li>
+                  <li><a href="">Гарантия</a></li>
+                  <li><a href="">Контакты</a></li>
+               </ul>
+               <div class="footer-s">
+                  <a href="" class="s-btn s-btn-q">ФБ</a>
+                  <a href="" class="s-btn s-btn-inst">ИНСТА</a>
+                  <a href="" class="s-btn s-btn-twit">ВК</a>
+               </div>
+            </div>
+
+            <div class="footer-content-right">
+               <ul class="footer-user-block">
+                  <li><a href="" class="login">Войти</a></li>
+                  <li><a href="" class="compare">Сравнить</a></li>
+                  <li><a href="" class="cart">Корзина</a></li>
+               </ul>
+               <p>Тел.: +7 (495) 495-95-95</p>
+               <a class="mini-logo" href=""><img src="img/mini-logo.png" width="27px" height="35px" alt=""></a>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+   <div class="pop-up-block closed">
+      <form action="" method="POST">
+         <span class="pop-up-block-close"></span>
+         <div class="left-input">
+            <label for="name">Ваше имя:</label>
+            <input type="text" name="name" id="name" placeholder="Имя Фамилия">
+         </div>
+         <div class="right-input">
+            <label for="email">Ваш e-mail:</label>
+            <input type="e-mail" name="email" id="email" placeholder="email@example.com">
+         </div>
+
+         <div class="center">
+            <label for="ta">Текст письма:</label>
+            <textarea name="" id="" cols="30" rows="10" id="ta" placeholder="В свободной форме"></textarea>
+         </div>
+         <button type="submit" class="btn">Отправить</button>
+      </form>
+   </div>
+
+</body>
+
+</html>
