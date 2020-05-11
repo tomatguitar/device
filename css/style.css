@@ -2009,6 +2009,8 @@ main .filter {
   top: 50%;
   left: 50%;
 
+  z-index: 10;
+
   display: block;
 
   width: 760px;
@@ -2039,6 +2041,61 @@ main .filter {
   justify-content: space-between;
   align-items: center;
 }
+
+.pop-up-block  .pop-up-block-close {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+
+  width: 55px;
+  height: 55px;
+
+  background: rgba(240, 197, 46, 0.5);
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.pop-up-block  .pop-up-block-close::before {
+  position: absolute;
+  content: "";
+
+  top: 16px;
+  left: 26px;
+
+  width: 2px;
+  height: 22px;
+
+  background: #fff;
+
+  transform: rotate(45deg);
+}
+
+.pop-up-block  .pop-up-block-close::after {
+  position: absolute;
+  content: "";
+
+  top: 16px;
+  left: 26px;
+
+  width: 2px;
+  height: 22px;
+
+  background: #fff;
+
+  transform: rotate(-45deg);
+}
+
+.pop-up-block  .pop-up-block-close:hover {
+  background: rgba(240, 197, 46, 1);
+}
+
+.pop-up-block  .pop-up-block-close:active {
+  background: rgba(240, 197, 46, 0.3);
+}
+
+
+
 
 .pop-up-block .left-input {
   display: flex;
@@ -2093,7 +2150,7 @@ main .filter {
 
   color: #464646;
   border: none;
-  background: #f2f2f2;
+  background: rgba(230, 230, 230, 0.5);
 }
 
 .pop-up-block input {
@@ -2102,11 +2159,13 @@ main .filter {
   padding: 0;
   padding-right: 10px;
   padding-left: 21px;
+  border: 3px solid transparent;
 }
 
-.popular-block textarea {
+.pop-up-block textarea {
   padding-top: 10px;
-  padding-right: 21px;
+  padding-left: 21px;
+  border: 3px solid transparent
 }
 
 .pop-up-block input::placeholder,
@@ -2122,4 +2181,20 @@ main .filter {
 .pop-up-block .btn {
   width: 180px;
   border: none;
+}
+
+
+.pop-up-block input:hover,
+.pop-up-block textarea:hover {
+  background: rgba(230, 230, 230, 0.8);
+}
+
+.pop-up-block input:focus,
+.pop-up-block textarea:focus {
+  background:#fff;
+  border: 3px solid #f7e296;
+}
+
+.pop-up-block .invalid {
+  background: rgba(237, 181, 181, 0.5);
 }
