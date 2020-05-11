@@ -154,7 +154,7 @@ h2::before {
   padding: 0 60px;
   padding-bottom: 160px;
 
-  background: rgba(247, 226, 150, 0.5);
+  background: rgba(240, 197, 46, 0.5);;
 
   justify-content: flex-start;
   flex-wrap: wrap;
@@ -405,7 +405,7 @@ h2::before {
   flex-basis: 300px;
 }
 
-.catalog-menu a::after {
+.catalog-menu > a::after {
   position: absolute;
   top: 5px;
   right: 54px;
@@ -417,6 +417,8 @@ h2::before {
 
   background: url("../img/plus.png");
 }
+
+
 
 .delivery {
   display: flex;
@@ -457,6 +459,64 @@ h2::before {
 .navigation-block a:active {
   color: rgba(0, 0, 0, 0.3);
 }
+
+
+.catalog-menu a:hover + .catalog-submenu {
+  display: block;
+}
+
+.catalog-submenu {
+  display: none;
+  position: absolute;
+  left: -60px;
+  top: 20px;
+  z-index: 2;
+  
+  width: 1040px;
+  height: 141px;
+  
+  padding: 0 60px;
+  padding-top: 25px;
+  
+  background: #f7e296;
+  
+  text-transform: none;
+  
+}
+
+.catalog-submenu ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  
+  list-style: none;
+}
+
+.catalog-submenu li {
+  display: inline-block;
+  width: 200px;
+  margin-right: 40px;
+}
+
+.catalog-submenu li:nth-child(2) {
+  margin-right: 0;
+}
+
+.catalog-submenu  .submenu-item {
+  display: block;
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-size: 15px;
+  line-height: 36px;
+  letter-spacing: normal;
+  
+  text-transform: none;
+}
+
+
+.catalog-submenu:hover {
+  display: block;
+}
+
 
 .slider {
   position: relative;
